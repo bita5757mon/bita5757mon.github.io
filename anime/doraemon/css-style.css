@@ -1,0 +1,213 @@
+@charset "UTF-8";
+
+/*リセット系*/
+*{
+margin:0;
+padding:0;
+border:none;
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+img{
+vertical-align:bottom;
+}
+a:focus, *:focus {
+outline:none;
+}
+html,body {
+}
+a{
+cursor: pointer;
+}
+body{
+font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "Meiryo UI", Meiryo, メイリオ, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", arial, sans-serif;
+font-size: 0;
+background: #ede5e0;
+}
+.SPhover{
+opacity: 0.7;
+}
+a img{
+width: 100%;
+}
+
+.noPC{
+display: inline;
+}
+.noSP{
+display: none;
+}
+
+/*pageTop*/
+#ptWrap{
+position:fixed;
+width: 18%;
+max-width: 80px;
+z-index: 2;
+bottom:2%;
+right:4%;
+}
+#op{
+width: 100%;
+height: 100%;
+position: fixed;
+top:0;
+left: 0;
+z-index: 15;
+background: #031d4d;
+}
+#loading{
+opacity: 0.4;
+width: 80px;
+position: fixed;
+top:50%;
+left:50%;
+margin-top: -71px;
+margin-left: -40px;
+}
+#mark{
+width: 140px;
+position: fixed;
+top:50%;
+left:50%;
+margin-top: -70px;
+margin-left: -70px;
+}
+#mark img{
+position: absolute;
+width: 100%;
+top:0;
+left:0;
+opacity: 0;
+}
+header{
+position: relative;
+text-align: center;
+background-size: auto;
+overflow: hidden;
+}
+.headerIMG{
+width: 120%;
+margin-left: -10%;
+}
+#headerLogo{
+display: block;
+position: absolute;
+top: 1vw;
+left: 1vw;
+width: 27vw;
+/*max-width: 540px;*/
+}
+#ttl{
+position: relative;
+display: block;
+width:95%;
+/*max-width: 870px;*/
+margin: -12vw auto 1vw auto;
+}
+p{
+text-align: center;
+font-size:3vw;
+color:#754c24;
+line-height: 1.6em;
+margin-bottom:4vw;
+}
+#shareWrap{
+margin: 0 auto;
+width: 80vw;
+text-align: center;
+margin-bottom:8vw;
+}
+#shareTXT{
+width: 75%;
+max-width: 380px;
+display: block;
+margin: 0 auto;
+}
+#shareWrap a{
+display: inline-block;
+width: 10vw;
+margin: 2vw 2vw 0 2vw;
+}
+.yt{
+width: 90%;
+max-width: 960px;
+display: block;
+margin: 0 auto 5vw auto;
+}
+#caution{
+font-size: 2.4vw;
+margin: 0 auto 5vw auto;
+}
+
+#ftrBTN{
+display: block;
+width: 45%;
+max-width: 270px;
+margin: 0 auto;
+}
+#ftrLogo{
+display: block;
+width: 70%;
+max-width: 416px;
+margin: 10vw auto 0 auto;
+}
+#cr{
+display: block;
+margin: 2vw auto 0 auto;
+padding-bottom: 5%;
+width: 50%;
+}
+
+/*PC*/
+@media screen and (min-width:768px){
+
+.noPC{
+display: none;
+}
+.noSP{
+display: inline;
+}
+.headerIMG{
+width: 100%;
+margin-left: 0;
+}
+#headerLogo{
+width: 20%;
+/*max-width: 540px;*/
+}
+#ttl{
+width:72.5%;
+/*max-width: 870px;*/
+margin: -12vw auto 1vw auto;
+}
+p{
+font-size:18px;
+margin-bottom:20px;
+}
+#shareWrap{
+width: 680px;
+margin-bottom:50px;
+}
+#shareWrap a{
+width: 54px;
+margin: 10px 5px 0 5px;
+}
+
+
+#caution{
+font-size: 14px;
+}
+#ftrBTN{
+width: 230px;
+margin: 0 auto;
+}
+#ftrLogo{
+margin: 40px auto 0 auto;
+}
+#cr{
+width:188px;
+margin: 10px auto 0 auto;
+padding-bottom: 20px;
+}
+
+}
