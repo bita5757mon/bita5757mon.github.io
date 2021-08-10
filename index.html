@@ -45,7 +45,7 @@
 
         
                     .page-bg {
-                background: #FFFFFF;
+                background: #E0EDCD;
             }
         
         .display-image {
@@ -68,8 +68,8 @@
         }
 
         .page-item-each {
-            color: #0D0C22;
-            font-family: 'Inter', sans-serif;
+            color: #FFFFFF;
+            font-family: 'Quicksand', sans-serif;
             font-size: 16px;
             font-weight: 400;
             text-transform: none;
@@ -82,9 +82,6 @@
                             margin: 16px 0;
                     }
 
-                    .page-item-wrap:hover {
-                transform: translate3d(0px, 0px, 0px) scale(1.015);
-            }
         
          .page-item-wrap{
             
@@ -92,9 +89,9 @@
 
         .page-item {
             border: 0px solid #FFFFFF;
-            background: #FFFFFF ;
+            background: #007034 ;
             border-radius: 30px;
-           box-shadow: 0px 6px 14px -6px rgba(24, 39, 75, 0.12), 0px 10px 32px -4px rgba(24, 39, 75, 0.1), inset 0px 0px 2px 1px rgba(24, 39, 75, 0.05);
+           
         }
 
         
@@ -107,7 +104,7 @@
         }
 
         .page-text-font {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             text-transform: none;
             
         }
@@ -127,6 +124,207 @@
         
     </style>
     <style>
+        
+        .page-item-wrap .page-item {
+            animation: colorchange_btn 12s alternate infinite forwards;
+            -moz-animation: colorchange_btn 12s alternate infinite forwards;
+            -webkit-animation: colorchange_btn 12s alternate infinite forwards;
+        }
+        .page-item-wrap {
+            transform: scale(1);
+            transition: all .15s cubic-bezier(0.17, 0.67, 0.29, 2.71);
+        }
+
+        .page-item-wrap:hover {
+            transform: scale(1.02);
+            transition: all .15s cubic-bezier(0.17, 0.67, 0.29, 2.71);
+        }
+
+        .page-bg {
+            animation: colorchange_bg 12s alternate infinite forwards;
+            -moz-animation: colorchange_bg 12s alternate infinite forwards;
+            -webkit-animation: colorchange_bg 12s alternate infinite forwards;
+        }
+
+        .social-icon-fill path, .social-icon-fill circle, .social-icon-fill rect, .page-text-color,
+        a:visited svg.social-icon-fill path, a:visited svg.social-icon-fill circle, a:visited svg.social-icon-fill rect {
+            animation: colorchange_txt 12s alternate infinite forwards;
+            -moz-animation: colorchange_txt 12s alternate infinite forwards;
+            -webkit-animation: colorchange_txt 12s alternate infinite forwards;
+        }
+        @keyframes  colorchange_btn {
+            0% {
+                background: #007034;
+            }
+            25% {
+                background: #F55727;
+            }
+            50% {
+                background: #E01B3C;
+            }
+            75% {
+                background: #6A18C7;
+            }
+            100% {
+                background: #3126D1;
+            }
+        }
+
+        @keyframes  colorchange_bg {
+            0% {
+                background: #E0EDCD;
+            }
+            25% {
+                background: #FCECBB;
+            }
+            50% {
+                background: #FAE1E6;
+            }
+            75% {
+                background: #E0D8E8;
+            }
+            100% {
+                background: #DCE7F5;
+            }
+        }
+        @keyframes  colorchange_txt {
+            0% {
+                fill: #007034;
+                color: #007034;
+            }
+            25% {
+                fill: #F55727;
+                color: #F55727;
+            }
+            50% {
+                fill: #E01B3C;
+                color: #E01B3C;
+            }
+            75% {
+                fill: #6A18C7;
+                color: #6A18C7;
+            }
+            100% {
+                fill: #3126D1;
+                color: #3126D1;
+            }
+        }
+
+        @-moz-keyframes colorchange_btn {
+            0% {
+                background: #007034;
+            }
+            25% {
+                background: #F55727;
+            }
+            50% {
+                background: #E01B3C;
+            }
+            75% {
+                background: #6A18C7;
+            }
+            100% {
+                background: #3126D1;
+            }
+        }
+
+        @-moz-keyframes colorchange_bg {
+            0% {
+                background: #E0EDCD;
+            }
+            25% {
+                background: #FCECBB;
+            }
+            50% {
+                background: #FAE1E6;
+            }
+            75% {
+                background: #E0D8E8;
+            }
+            100% {
+                background: #DCE7F5;
+            }
+        }
+        @-moz-keyframes colorchange_txt {
+            0% {
+                fill: #007034;
+                color: #007034;
+            }
+            25% {
+                fill: #F55727;
+                color: #F55727;
+            }
+            50% {
+                fill: #E01B3C;
+                color: #E01B3C;
+            }
+            75% {
+                fill: #6A18C7;
+                color: #6A18C7;
+            }
+            100% {
+                fill: #3126D1;
+                color: #3126D1;
+            }
+        }
+
+        @-webkit-keyframes colorchange_btn {
+            0% {
+                background: #007034;
+            }
+            25% {
+                background: #F55727;
+            }
+            50% {
+                background: #E01B3C;
+            }
+            75% {
+                background: #6A18C7;
+            }
+            100% {
+                background: #3126D1;
+            }
+        }
+
+        @-webkit-keyframes colorchange_bg {
+            0% {
+                background: #E0EDCD;
+            }
+            25% {
+                background: #FCECBB;
+            }
+            50% {
+                background: #FAE1E6;
+            }
+            75% {
+                background: #E0D8E8;
+            }
+            100% {
+                background: #DCE7F5;
+            }
+        }
+        @-webkit-keyframes colorchange_txt {
+            0% {
+                fill: #007034;
+                color: #007034;
+            }
+            25% {
+                fill: #F55727;
+                color: #F55727;
+            }
+            50% {
+                fill: #E01B3C;
+                color: #E01B3C;
+            }
+            75% {
+                fill: #6A18C7;
+                color: #6A18C7;
+            }
+            100% {
+                fill: #3126D1;
+                color: #3126D1;
+            }
+        }
             </style>
 
 </head>
