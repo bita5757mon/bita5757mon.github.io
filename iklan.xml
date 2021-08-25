@@ -13,7 +13,7 @@
         <ClickThrough><![CDATA[https://www.youtube.com/c/bitamon]]></ClickThrough>
       </VideoClicks>
       <MediaFiles>
-       <MediaFile id="GDFP" delivery="progressive" width="1280" height="720" type="video/mp4" bitrate="236" scalable="true" maintainAspectRatio="true"><![CDATA[/iklan25821.mp4]]></MediaFile>
+       <MediaFile id="GDFP" delivery="progressive" width="1280" height="720" type="video/mp4" bitrate="236" scalable="true" maintainAspectRatio="true"><![CDATA[https://vwv.bitamon.eu.org/iklan25821.mp4]]></MediaFile>
       </MediaFiles>
      </Linear>
     </Creative>
