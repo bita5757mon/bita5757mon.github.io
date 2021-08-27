@@ -26,7 +26,40 @@
         video = "https://www.googleapis.com/drive/v3/files/"+video+"?alt=media&key="+apikey;
 
         //document.getElementById('video').innerHTML = ' Hii '  ;
-        document.write("<video controls id='video-id' src="+video+"></video>");
+        document.write("<div id="encrpyt">
+		
+	</div>
+	<!-- Core Streaming -->
+	<script>
+			jwplayer.key = "cLGMn8T20tGvW+0eXPhq4NNmLB57TrscPjd1IyJF84o="; 			
+
+			var player = jwplayer('encrpyt');
+
+			player.setup({
+			  sources: [ {
+					file: "+video+", label: "480p",
+					type: "video/mp4"
+					},{
+					file: "+video+", label: "720p",
+					type: "video/mp4"
+					}
+			  ], 
+			  autostart: true,      
+			  playbackRateControls: [0.25, 0.5, 0.75, 1, 1.25, 1.5, 2],   
+			  abouttext:  "2020 ©BDF_INDONESIA", 
+			  	 	  aboutlink: "https://www.youtube.com/c/bitamon",         
+ 
+			  width: $(window).width(),
+		      height: $(window).height()	          
+			});
+
+			$(document).ready(function() {
+				$(window).resize(function(){
+					jwplayer().resize($(window).width(),$(window).height())
+				})
+			})
+
+	</script>");
     </script>
 
 
